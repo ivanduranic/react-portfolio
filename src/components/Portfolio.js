@@ -1,4 +1,11 @@
 import React from "react";
+import datenight from "../components/images/datenight.png";
+import novelty from "../components/images/novelty.png";
+import ESG from "../components/images/ESG.png";
+import budgettracker from "../components/images/budgettracker.png";
+import employeedir from "../components/images/employeedir.png";
+import workout from "../components/images/workout.png";
+
 
 function Portfolio() {
   return (
@@ -14,7 +21,7 @@ function Portfolio() {
               data-toggle="modal"
               data-target="#modalCenterQuiz"
             >
-              <img src={require("../components/images/datenight.png")} alt="" />
+              <img src={datenight} alt="" />
               <div className="pftitle">Date Night Planner</div>
             </button>
             <div
@@ -76,7 +83,7 @@ function Portfolio() {
               data-target="#modalCenterWeather"
             >
               <img
-                src={require("../components/images/novelty.png")}
+                src={novelty}
                 alt=""
               />
               <div className="pftitle">NOVELty</div>
@@ -143,7 +150,7 @@ function Portfolio() {
               data-toggle="modal"
               data-target="#modalCenterTraveler"
             >
-              <img src={require("../components/images/ESG.png")} alt="" />
+              <img src={ESG} alt="" />
               
               <div className="pftitle">Employee Summary Generator</div>
             </button>
@@ -202,7 +209,7 @@ function Portfolio() {
               data-toggle="modal"
               data-target="#modalCenterNote"
             >
-              <img src={require("../components/images/budgettracker.png")} alt="" />
+              <img src={budgettracker} alt="" />
               <div className="pftitle">Budget Tracker</div>
             </button>
             <div
@@ -267,7 +274,7 @@ function Portfolio() {
               data-toggle="modal"
               data-target="#modalCenter"
             >
-              <img src={require("../components/images/employeedir.png")} alt="" />
+              <img src={employeedir} alt="" />
               <div className="pftitle">Employee Directory</div>
             </button>
             <div
@@ -332,7 +339,7 @@ function Portfolio() {
               data-toggle="modal"
               data-target="#exampleModalCenter"
             >
-              <img src={require("../components/images/workout.png")} alt="" />
+              <img src={workout} alt="" />
               <div className="pftitle">Workout Tracker</div>
             </button>
             <div

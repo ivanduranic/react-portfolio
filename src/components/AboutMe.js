@@ -1,4 +1,9 @@
 import React from "react";
+import Profilephoto from "../components/images/Profilephoto.jpg";
+import Resume from "../components/images/Resume.png";
+import GitHub from "../components/images/GitHub.png";
+import LinkedIn from "../components/images/LinkedIn.png";
+import Facebook from "../components/images/Facebook.png";
 
 function AboutMe() {
   return (
@@ -9,7 +14,7 @@ function AboutMe() {
           <img
             className="col-sm-12"
             id="profil"
-            src={require("../components/images/Profilephoto.jpg")}
+            src={Profilephoto}
             alt="Ivan Duranic"
           />
           <p className="col-sm-12" id="Bio">
@@ -40,7 +45,7 @@ function AboutMe() {
           >
             <img
               className="linkImg"
-              src={require("../components/images/Resume.png")}
+              src={Resume}
               data-toggle="tooltip"
               data-placement="top"
               title="link to my resume"
@@ -54,7 +59,7 @@ function AboutMe() {
           >
             <img
               className="linkImg"
-              src={require("../components/images/GitHub.png")}
+              src={GitHub}
               data-toggle="tooltip"
               data-placement="top"
               title="link to my github profile"
@@ -68,7 +73,7 @@ function AboutMe() {
           >
             <img
               className="linkImg"
-              src={require("../components/images/LinkedIn.png")}
+              src={LinkedIn}
               data-toggle="tooltip"
               data-placement="top"
               title="link to my LinkedIn profile"
@@ -82,7 +87,7 @@ function AboutMe() {
           >
             <img
               className="linkImg"
-              src={require("../components/images/Facebook.png")}
+              src={Facebook}
               data-toggle="tooltip"
               data-placement="top"
               title="link to my Facebook profile"
