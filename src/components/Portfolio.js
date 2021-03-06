@@ -324,3 +324,75 @@ function Portfolio() {
               </div>
             </div>
           </div>
+
+          {/* Workout Tracker */}
+          <div className="pf">
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              <img src={require("../components/images/workout.png")} alt="" />
+              <div className="pftitle">Workout Tracker</div>
+            </button>
+            <div
+              className="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div
+                className="modal-dialog modal-dialog-centered"
+                role="document"
+              >
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalCenterTitle">
+                    Workout Tracker
+                    </h5>
+                    <button
+                      type="button"
+                      className="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div className="modal-body">
+                    <a
+                      href="https://workout-trackerid.herokuapp.com"
+                      target="_blank"
+                    >
+                      <h4>Deployed App</h4>
+                    </a>
+                    <br />
+                    <a
+                      href="https://github.com/ivanduranic/workout-tracker"
+                      target="_blank"
+                    >
+                      <h4>Github repository</h4>
+                    </a>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Portfolio;
