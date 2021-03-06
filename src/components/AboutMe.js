@@ -9,7 +9,7 @@ function AboutMe() {
           <img
             className="col-sm-12"
             id="profil"
-            src={require("../components/images/")}
+            src={require("../components/images/Profilephoto.jpg")}
             alt="Ivan Duranic"
           />
           <p className="col-sm-12" id="Bio">
@@ -34,8 +34,9 @@ function AboutMe() {
       <div className="row justify-content-center">
         <div id="links">
           <a
-            href="https://drive.google.com/file/d/1TwKaFAzaLvQXyPCtYcyiPgR4OdMF_XFK/view?usp=sharing"
+            href={require("../components/documents/MyResume.pdf")}
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="linkImg"
@@ -46,7 +47,11 @@ function AboutMe() {
               alt=""
             />
           </a>
-          <a href="https://github.com/ivanduranic" target="_blank">
+          <a
+            href="https://github.com/ivanduranic"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="linkImg"
               src={require("../components/images/GitHub.png")}
@@ -56,7 +61,11 @@ function AboutMe() {
               alt=""
             />
           </a>
-          <a href="www.linkedin.com/in/ivan-đuranić-65544295" target="_blank">
+          <a
+            href="www.linkedin.com/in/ivan-đuranić-65544295"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="linkImg"
               src={require("../components/images/LinkedIn.png")}
@@ -66,7 +75,11 @@ function AboutMe() {
               alt=""
             />
           </a>
-          <a href="https://www.facebook.com/ivan.duranic/" target="_blank">
+          <a
+            href="https://www.facebook.com/ivan.duranic/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="linkImg"
               src={require("../components/images/Facebook.png")}

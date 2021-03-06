@@ -40,7 +40,7 @@ function App() {
         </Switch>
 
         <footer className="footer" id="footer">
-          copyright@
+          Copyright@2021
         </footer>
       </div>
     </Router>
