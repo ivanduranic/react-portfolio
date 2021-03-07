@@ -6,7 +6,6 @@ import budgettracker from "../components/images/budgettracker.png";
 import employeedir from "../components/images/employeedir.png";
 import workout from "../components/images/workout.png";
 
-
 function Portfolio() {
   return (
     <div className="row my-auto justify-content-md-center">
@@ -19,20 +18,23 @@ function Portfolio() {
             <button
               type="button"
               data-toggle="modal"
-              data-target="#modalCenterQuiz"
+              data-target="#modalCenterDate"
             >
               <img src={datenight} alt="" />
               <div className="pftitle">Date Night Planner</div>
             </button>
             <div
               className="modal fade"
-              id="modalCenterQuiz"
+              id="modalCenterDate"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
               aria-hidden="true"
             >
-              <div className="modal-dialog modal-dialog-centered" role="document">
+              <div
+                className="modal-dialog modal-dialog-centered"
+                role="document"
+              >
                 <div className="modal-content">
                   <div className="modal-header">
                     <h5 className="modal-title" id="exampleModalCenterTitle">
@@ -51,6 +53,7 @@ function Portfolio() {
                     <a
                       href="https://ivanduranic.github.io/date-night-planner"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Deployed App</h4>
                     </a>
@@ -58,6 +61,7 @@ function Portfolio() {
                     <a
                       href="https://github.com/ivanduranic/date-night-planner"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Github repository</h4>
                     </a>
@@ -80,17 +84,14 @@ function Portfolio() {
             <button
               type="button"
               data-toggle="modal"
-              data-target="#modalCenterWeather"
+              data-target="#modalCenterNovel"
             >
-              <img
-                src={novelty}
-                alt=""
-              />
+              <img src={novelty} alt="" />
               <div className="pftitle">NOVELty</div>
             </button>
             <div
               className="modal fade"
-              id="modalCenterWeather"
+              id="modalCenterNovel"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -118,6 +119,7 @@ function Portfolio() {
                     <a
                       href="https://novelty.herokuapp.com/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Deployed App</h4>
                     </a>
@@ -125,6 +127,7 @@ function Portfolio() {
                     <a
                       href="https://github.com/ivanduranic/NOVELty"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Github repository</h4>
                     </a>
@@ -148,15 +151,15 @@ function Portfolio() {
             <button
               type="button"
               data-toggle="modal"
-              data-target="#modalCenterTraveler"
+              data-target="#modalCenterEmployee"
             >
               <img src={ESG} alt="" />
-              
+
               <div className="pftitle">Employee Summary Generator</div>
             </button>
             <div
               className="modal fade"
-              id="modalCenterTraveler"
+              id="modalCenterEmployee"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -169,7 +172,7 @@ function Portfolio() {
                 <div className="modal-content">
                   <div className="modal-header">
                     <h5 className="modal-title" id="exampleModalCenterTitle">
-                    Employee Summary Generator
+                      Employee Summary Generator
                     </h5>
                     <button
                       type="button"
@@ -184,6 +187,7 @@ function Portfolio() {
                     <a
                       href="https://github.com/ivanduranic/employee-summary-generator"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Github repository</h4>
                     </a>
@@ -207,14 +211,14 @@ function Portfolio() {
             <button
               type="button"
               data-toggle="modal"
-              data-target="#modalCenterNote"
+              data-target="#modalCenterBudget"
             >
               <img src={budgettracker} alt="" />
               <div className="pftitle">Budget Tracker</div>
             </button>
             <div
               className="modal fade"
-              id="modalCenterNote"
+              id="modalCenterBudget"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -227,7 +231,7 @@ function Portfolio() {
                 <div className="modal-content">
                   <div className="modal-header">
                     <h5 className="modal-title" id="exampleModalCenterTitle">
-                    Budget Tracker
+                      Budget Tracker
                     </h5>
                     <button
                       type="button"
@@ -242,6 +246,7 @@ function Portfolio() {
                     <a
                       href="https://budget-trackerid.herokuapp.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Deployed App</h4>
                     </a>
@@ -249,6 +254,7 @@ function Portfolio() {
                     <a
                       href="https://github.com/ivanduranic/budget-tracker"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Github repository</h4>
                     </a>
@@ -272,14 +278,14 @@ function Portfolio() {
             <button
               type="button"
               data-toggle="modal"
-              data-target="#modalCenter"
+              data-target="#modalCenterDir"
             >
               <img src={employeedir} alt="" />
               <div className="pftitle">Employee Directory</div>
             </button>
             <div
               className="modal fade"
-              id="modalCenter"
+              id="modalCenterDir"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -292,7 +298,7 @@ function Portfolio() {
                 <div className="modal-content">
                   <div className="modal-header">
                     <h5 className="modal-title" id="exampleModalCenterTitle">
-                    Employee Directory
+                      Employee Directory
                     </h5>
                     <button
                       type="button"
@@ -307,6 +313,7 @@ function Portfolio() {
                     <a
                       href="https://ivanduranic.github.io/employee-directory/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Deployed App</h4>
                     </a>
@@ -314,6 +321,7 @@ function Portfolio() {
                     <a
                       href="https://github.com/ivanduranic/employee-directory"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Github repository</h4>
                     </a>
@@ -337,14 +345,14 @@ function Portfolio() {
             <button
               type="button"
               data-toggle="modal"
-              data-target="#exampleModalCenter"
+              data-target="#ModalCenterWorkout"
             >
               <img src={workout} alt="" />
               <div className="pftitle">Workout Tracker</div>
             </button>
             <div
               className="modal fade"
-              id="exampleModalCenter"
+              id="ModalCenterWorkout"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -357,7 +365,7 @@ function Portfolio() {
                 <div className="modal-content">
                   <div className="modal-header">
                     <h5 className="modal-title" id="exampleModalCenterTitle">
-                    Workout Tracker
+                      Workout Tracker
                     </h5>
                     <button
                       type="button"
@@ -372,6 +380,7 @@ function Portfolio() {
                     <a
                       href="https://workout-trackerid.herokuapp.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Deployed App</h4>
                     </a>
@@ -379,6 +388,7 @@ function Portfolio() {
                     <a
                       href="https://github.com/ivanduranic/workout-tracker"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <h4>Github repository</h4>
                     </a>

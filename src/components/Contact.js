@@ -56,7 +56,7 @@ class Contact extends Component {
         <div className="row justify-content-md-center">
           <div>
             <h6 id="contacts">
-              Toronto, ON | Email: ivan.duranic@gmail.com
+              Toronto, ON | Phone: +1 (437) 774-6800 | Email: ivan.duranic@gmail.com
             </h6>
           </div>
         </div>
@@ -117,17 +117,6 @@ class Contact extends Component {
                     value={this.state.phone}
                   />
                 </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="inputCompanyName">Company name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  onChange={(e) => this.setState({ company: e.target.value })}
-                  id="company"
-                  name="company"
-                  value={this.state.company}
-                />
               </div>
               <div className="form-group">
                 <label htmlFor="inputMessage">Message</label>

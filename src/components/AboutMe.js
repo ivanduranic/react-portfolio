@@ -39,7 +39,7 @@ function AboutMe() {
       <div className="row justify-content-center">
         <div id="links">
           <a
-            href={require("../components/documents/MyResume.pdf")}
+            href="https://drive.google.com/file/d/1TwKaFAzaLvQXyPCtYcyiPgR4OdMF_XFK/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
@@ -67,7 +67,7 @@ function AboutMe() {
             />
           </a>
           <a
-            href="www.linkedin.com/in/ivan-đuranić-65544295"
+            href="https://www.linkedin.com/in/ivan-%C4%91urani%C4%87-65544295"
             target="_blank"
             rel="noreferrer"
           >
