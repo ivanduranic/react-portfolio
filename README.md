@@ -15,7 +15,7 @@ As a Full-Stack Web Developer, I want a deployed portfolio so that I can showcas
 
 ## Installation
 
-This is a website only and does not require installation. It's currently hosted on GitHub Pages and you can access it at 
+This is a website only and does not require installation. It's currently hosted on GitHub Pages and you can access it at https://ivanduranic.github.io/react-portfolio/.
 
 ## Usage
 
