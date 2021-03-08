@@ -1,147 +1,56 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React from "react";
 
-class Contact extends Component {
-  state = {
-    fname: "",
-    lname: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
-    sent: false,
-    msg: "",
-  };
-
-  resetForm = () => {
-    this.setState({
-      fname: "",
-      lname: "",
-      email: "",
-      phone: "",
-      company: "",
-      message: "",
-    });
-  };
-
-  formSubmit = (e) => {
-    e.preventDefault();
-
-    this.setState({
-      msg: "...sending",
-    });
-
-    let data = {
-      fname: this.state.fname,
-      lname: this.state.lname,
-      email: this.state.email,
-      phone: this.state.phone,
-      company: this.state.company,
-      message: this.state.message,
-    };
-    axios
-      .post(data)
-      .then(() => {
-        this.setState({ msg: "Request submitted! Thank you " });
-        this.resetForm();
-      })
-      .catch(() => {
-        this.setState({ msg: "Error, message not sent" });
-      });
-  };
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }
 
   render() {
-    return (
-      <div className="container my-auto justify-content-md-center">
-        <div className="row justify-content-md-center">
-          <div>
-            <h6 id="contacts">
-              Toronto, ON | Phone: +1 (437) 774-6800 | Email: ivan.duranic@gmail.com
-            </h6>
+    return(
+      <div className="row my-auto justify-content-md-center">
+      <div className="col-md-9" id="container2">
+      <div className="App">
+        <h1 className="title">Contact</h1>
+        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
           </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12" id="colContact">
-            <form method="POST" onSubmit={(e) => this.formSubmit(e)}>
-              <h1 className="title">Contact Me</h1>
-              <br />
-              <div className="form-group">
-                <h4 className="row justify-content-md-center">
-                  {this.state.msg}
-                </h4>
-              </div>
-              <div className="form-row">
-                <div className="form-group col-md-6">
-                  <label htmlFor="inputFName">First name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    onChange={(e) => this.setState({ fname: e.target.value })}
-                    id="fName"
-                    name="fName"
-                    value={this.state.fname}
-                  />
-                </div>
-                <div className="form-group col-md-6">
-                  <label htmlFor="inputLName">Last name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    onChange={(e) => this.setState({ lname: e.target.value })}
-                    id="lName"
-                    name="lName"
-                    value={this.state.lname}
-                  />
-                </div>
-              </div>
-              <div className="form-row">
-                <div className="form-group col-md-6">
-                  <label htmlFor="inputEmail">Email address</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    onChange={(e) => this.setState({ email: e.target.value })}
-                    id="email"
-                    name="email"
-                    value={this.state.email}
-                  />
-                </div>
-                <div className="form-group col-md-6">
-                  <label htmlFor="inputPhone">Phone number</label>
-                  <input
-                    type="phone"
-                    className="form-control"
-                    onChange={(e) => this.setState({ phone: e.target.value })}
-                    id="phone"
-                    name="phone"
-                    value={this.state.phone}
-                  />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="inputMessage">Message</label>
-                <textarea
-                  type="text"
-                  className="form-control"
-                  id="message"
-                  onChange={(e) => this.setState({ message: e.target.value })}
-                  name="message"
-                  value={this.state.message}
-                ></textarea>
-              </div>
-              <button
-                className="btn btn-primary btn-lg btn-block"
-                id="Submit"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+          <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </div>
-        </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      </div>
       </div>
     );
   }
+
+  onNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+
+  onMessageChange(event) {
+    this.setState({message: event.target.value})
+  }
+
+  handleSubmit(event) {
+  }
 }
 
-export default Contact;
+export default App;
