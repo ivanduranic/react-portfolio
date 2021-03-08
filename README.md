@@ -20,8 +20,8 @@ This is a website only and does not require installation. It's currently hosted 
 ## Usage
 
 ![image](https://user-images.githubusercontent.com/61889668/110225023-2a5c4a00-7eaf-11eb-8054-d024018a79ad.png)
-![image](https://user-images.githubusercontent.com/61889668/110225029-3c3ded00-7eaf-11eb-9794-bcea43004f00.png)
-![image](https://user-images.githubusercontent.com/61889668/110225038-47911880-7eaf-11eb-83bd-bf898fe4a8d2.png)
+![image](https://user-images.githubusercontent.com/61889668/110264919-64e5e580-7f88-11eb-863b-9eb965729133.png)
+![image](https://user-images.githubusercontent.com/61889668/110264942-6f07e400-7f88-11eb-932d-a07652da719d.png)
 
 This app is quite easy to use and understand. On the Welcome page you can learn a bit about myself. On the right side of the navigation bar you can click the Portfolio tab which will display six of my projects/applications. Also, you can click the Contact tab which will enable you to enter your contact data and a potential message to me. My phone number as well as my email are displayed on the Contact page, as well.
 
