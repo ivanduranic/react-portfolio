@@ -13,398 +13,131 @@ function Portfolio() {
         <h1 className="title">Portfolio</h1>
         <br />
         <div className="row justify-content-center">
-          {/* Date Night Planner */}
-          <div className="pf">
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#modalCenterDate"
-            >
-              <img src={datenight} alt="" />
-              <div className="pftitle">Date Night Planner</div>
-            </button>
-            <div
-              className="modal fade"
-              id="modalCenterDate"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document"
+        <div className="pf">
+        <h5>Date-Night Planner App</h5>
+          <img
+            src={datenight}
+            className="border border-dark"
+            alt="Input page of the Project"
+          />
+          <ul>
+            <li>
+              <a href="https://ivanduranic.github.io/date-night-planner/"
+                >Link to the deployed app</a
               >
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">
-                      Date Night Planner
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href="https://ivanduranic.github.io/date-night-planner"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Deployed App</h4>
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/ivanduranic/date-night-planner"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Github repository</h4>
-                    </a>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li>
+              <a href="https://github.com/ivanduranic/date-night-planner"
+                >Link to the GitHub repository</a
+              >
+            </li>
+          </ul>
           </div>
-          {/* Novelty */}
+          <br /><br />
           <div className="pf">
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#modalCenterNovel"
-            >
-              <img src={novelty} alt="" />
-              <div className="pftitle">NOVELty</div>
-            </button>
-            <div
-              className="modal fade"
-              id="modalCenterNovel"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document"
+          <h5>NOVELty App</h5>
+          <img
+            src={novelty}
+            className="border border-dark"
+            alt="First page of the NOVELty"
+          />
+          <ul>
+            <li>
+              <a href="https://novelty.herokuapp.com/"
+                >Link to the deployed app</a
               >
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">
-                      NOVELty
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href="https://novelty.herokuapp.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Deployed App</h4>
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/ivanduranic/NOVELty"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Github repository</h4>
-                    </a>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li>
+              <a href="https://github.com/ivanduranic/NOVELty"
+                >Link to the GitHub repository</a
+              >
+            </li>
+          </ul>
           </div>
-
-          {/* Employee Summary Generator */}
+          <br /><br />
           <div className="pf">
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#modalCenterEmployee"
-            >
-              <img src={ESG} alt="" />
-
-              <div className="pftitle">Employee Summary Generator</div>
-            </button>
-            <div
-              className="modal fade"
-              id="modalCenterEmployee"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document"
+          <h5>Employee Summary Generator</h5>
+          <img
+            src={ESG}
+            className="border border-dark"
+            alt="Final page of the employee-summary-generator"
+          />
+          <ul>
+          <li>
+              <a href="https://github.com/ivanduranic/employee-summary-generator#installation"
+                >Link to the Installation instructions</a
               >
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">
-                      Employee Summary Generator
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href="https://github.com/ivanduranic/employee-summary-generator"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Github repository</h4>
-                    </a>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li>
+              <a
+                href="https://github.com/ivanduranic/employee-summary-generator"
+                >Link to the GitHub repository</a
+              >
+            </li>
+          </ul>
           </div>
-
-          {/* Budget Tracker */}
+          <br /><br />
           <div className="pf">
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#modalCenterBudget"
-            >
-              <img src={budgettracker} alt="" />
-              <div className="pftitle">Budget Tracker</div>
-            </button>
-            <div
-              className="modal fade"
-              id="modalCenterBudget"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document"
+          <h5>Budget Tracker</h5>
+          <img
+            src={budgettracker}
+            className="border border-dark"
+            alt="First page of the NOVELty"
+          />
+          <ul>
+            <li>
+              <a href="https://budget-trackerid.herokuapp.com"
+                >Link to the deployed app</a
               >
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">
-                      Budget Tracker
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href="https://budget-trackerid.herokuapp.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Deployed App</h4>
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/ivanduranic/budget-tracker"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Github repository</h4>
-                    </a>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li>
+              <a href="https://github.com/ivanduranic/budget-tracker"
+                >Link to the GitHub repository</a
+              >
+            </li>
+          </ul>
           </div>
-
-          {/* Employee Directory */}
+          <br /><br />
           <div className="pf">
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#modalCenterDir"
-            >
-              <img src={employeedir} alt="" />
-              <div className="pftitle">Employee Directory</div>
-            </button>
-            <div
-              className="modal fade"
-              id="modalCenterDir"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document"
+          <h5>Employee Directory</h5>
+          <img
+            src={employeedir}
+            className="border border-dark"
+            alt="First page of the NOVELty"
+          />
+          <ul>
+            <li>
+              <a href="https://ivanduranic.github.io/employee-directory/"
+                >Link to the deployed app</a
               >
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">
-                      Employee Directory
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href="https://ivanduranic.github.io/employee-directory/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Deployed App</h4>
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/ivanduranic/employee-directory"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Github repository</h4>
-                    </a>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li>
+              <a href="https://github.com/ivanduranic/employee-directory"
+                >Link to the GitHub repository</a
+              >
+            </li>
+          </ul>
           </div>
-
-          {/* Workout Tracker */}
+          <br /><br />
           <div className="pf">
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#ModalCenterWorkout"
-            >
-              <img src={workout} alt="" />
-              <div className="pftitle">Workout Tracker</div>
-            </button>
-            <div
-              className="modal fade"
-              id="ModalCenterWorkout"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div
-                className="modal-dialog modal-dialog-centered"
-                role="document"
+          <h5>Workout Tracker</h5>
+          <img
+            src={workout}
+            className="border border-dark"
+            alt="First page of the NOVELty"
+          />
+          <ul>
+            <li>
+              <a href="https://workout-trackerid.herokuapp.com"
+                >Link to the deployed app</a
               >
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">
-                      Workout Tracker
-                    </h5>
-                    <button
-                      type="button"
-                      className="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div className="modal-body">
-                    <a
-                      href="https://workout-trackerid.herokuapp.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Deployed App</h4>
-                    </a>
-                    <br />
-                    <a
-                      href="https://github.com/ivanduranic/workout-tracker"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <h4>Github repository</h4>
-                    </a>
-                  </div>
-                  <div className="modal-footer">
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li>
+              <a href="https://github.com/ivanduranic/workout-tracker"
+                >Link to the GitHub repository</a
+              >
+            </li>
+          </ul>
           </div>
         </div>
       </div>
